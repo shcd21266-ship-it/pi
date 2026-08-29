@@ -1,0 +1,32 @@
+#quiz-assistant-overlay {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  transition: min-width 0.3s ease;
+}
+
+#quiz-assistant-overlay .answer-letter {
+  font-size: 80px;
+  font-weight: 900;
+  line-height: 1;
+  background: linear-gradient(135deg, #60a5fa, #a78bfa);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+#quiz-assistant-overlay .pulse-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #22c55e;
+  animation: pulse 2s infinite;
+  display: inline-block;
+}
+
+#quiz-assistant-overlay .reanalyze-btn:hover {
+  background: rgba(255,255,255,0.2) !important;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.3; }
+}
